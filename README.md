@@ -31,7 +31,7 @@ NVIDIA GeForce RTX 2080 Ti (11 GB VRAM) GPU was used (v531.29 drivers). During t
 Raw results are presented below. More of the data/metrics and conclusions can be found in the Master's Thesis .pdf itself [5] (written in polish).
 
 #### Yedroudj-Net:
-![image](https://github.com/remmarty/CNN_steganalysis/assets/26029058/63798d19-ca14-4d8b-8250-2abdc4dd3c2a)
+![image](https://github.com/remmarty/CNN_steganalysis/assets/26029058/8e46790e-5a54-49ce-8741-62fe14981477)
 
 #### GBRAS-Net:
 ![image](https://github.com/remmarty/CNN_steganalysis/assets/26029058/c6ea0dfc-a56a-4d79-8b5d-7943ba4604cc)
