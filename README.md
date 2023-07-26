@@ -8,7 +8,7 @@ This thesis concernes the application of convolutional neural networks (deep lea
 
 As part of the project, it was decided to use the BOSSbase v1.01 dataset, which is one of the most commonly used datasets for training and testing models in steganalysis. BOSSbase v1.01 contains 10,000 images taken with six different cameras, originally saved in RAW format (without compression). These images were then cropped to a size of 512 × 512 pixels and converted to PGM format (grayscale images) with an 8-bit depth (pixel values ranging from 0 to 255).
 
-To reduce computational complexity, accelerate the learning process, and prevent overfitting to the training data, it was decided to resize each image from 512 × 512 pixels to 256 × 256 pixels. Subsequently, copies of all 10,000 images from BOSSbase were created, and using modified MATLAB scripts [3], messages were embedded into these copies using the WOW algorithm with an embedding capacity of 0.4 bpp. This resulted in 10,000 pairs of cover/stego images. During the embedding process for each of the 10,000 images, a different, randomly generated stego key was used. 
+To reduce computational complexity, accelerate the learning process, and prevent overfitting to the training data, it was decided to resize each image from 512 × 512 pixels to 256 × 256 pixels. Subsequently, copies of all 10000 images from BOSSbase were created, and using modified MATLAB scripts [3], messages were embedded into these copies using the WOW algorithm with an embedding capacity of 0.4 bpp. This resulted in 10000 pairs of cover/stego images. During the embedding process for each of the 10000 images, a different, randomly generated stego key was used. 
 
 The dataset [4] was divided into three parts:
 training set - consisting of 8000 pairs of images used solely for training the neural network.
@@ -24,11 +24,11 @@ In the same manner, a second part of dataset was prepared, but instead of using 
 3. PyTorch Lightning 2.0.0
 4. Neptune.ai API 1.0 - Neptune.ai logger and cloud platform was used to store all the necessary data about each of the conducted experiments and to plot metrics like train/val classification per epoch.
 
-NVIDIA GeForce RTX 2080 Ti (11 GB VRAM) GPU was used (v531.29 drivers). During the training of each model 95% of GPU VRAM was used and whole training/testing process took about 4,5 hrs on average.
+NVIDIA GeForce RTX 2080 Ti (11 GB VRAM) GPU was used (v531.29 drivers). During the training of each model 95% of GPU VRAM was used and whole training/testing process for each variant took about 4,5 hrs on average.
 
 ## Results
 
-Raw results are presented below. More of the data/metrics and conclusions can be found in the Master's Thesis .pdf itself [5] (written in polish).
+Raw results are presented below. More of the data/metrics (accuracy graphs, ROC curves, CM) and conclusions can be found in the Master's Thesis .pdf itself [5] (written in polish).
 
 #### Yedroudj-Net:
 ![image](https://github.com/remmarty/CNN_steganalysis/assets/26029058/8e46790e-5a54-49ce-8741-62fe14981477)
